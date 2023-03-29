@@ -1,0 +1,24 @@
+
+
+ As chip designs become more complex, and target parameters become tighter, we need to automate chip design.  This basically means we are radio-frequency electrical engineers. So we should start w/ Maxwell's Equations:
+\begin{gather}
+    \nabla \cdot \mathbf{E} = \frac{\rho}{\epsilon_0} \\
+    \nabla \cdot \mathbf{B} = 0 \\
+    \nabla \times \mathbf{E} = - \frac{\partial \mathbf{B}}{\partial t} \\
+    \nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}
+\end{gather}
+Notice on the left hand side of each equation, we see an electromagnetic term. On the right hand side, we see some geometrical source term. Maxwell's equations imply electromagnetic fields are simply a result of the geometry of your charge \& current distribution. Resistance, capacitance, and inductance are just different ways of measuring interaction of electromagnetism interacts with materials.
+\begin{center}
+	\boxed{\text{Resistance, Capacitance, Inductance} \iff \text{Electromagnetism} \iff \text{Geometry}}
+\end{center}
+In superconducting qubits, a Transmon is just a non-linear LC circuit. Hence the geometry of your qubit will change its characteristics.
+
+
+\section{Designing with Qiskit Metal}
+Qiskit Metal is an open-source python library for qubit design \& simulation. You can download it here: \url{https://github.com/Qiskit/qiskit-metal}.
+
+\subsection{Creating a Custom Qubit}
+
+
+\subsection{Renderers}
+
