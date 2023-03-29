@@ -1,0 +1,62 @@
+\documentclass[11pt]{book}
+
+\usepackage{physics}
+\usepackage{listings}
+\lstset{language=Python}
+\usepackage{hyperref}
+
+
+\begin{document}
+
+\title{Qiskit Metal, Instruction Manual for Levenson-Falk Labs}
+\author{Clark Miyamoto}
+\date{}
+
+\maketitle
+
+\section*{Author's Note}
+Hello to whoever is reading this! I'm Clark, I am an undergrad research assistant at Levenson-Falk Labs (LFL) at the University of Southern California. I'm about to graduate so my PI, Eli, asked me to write some tutorials to help the next cohort of researchers get up to speed. We chose to open-sourced this to provide my small amount of knowledge to the scientific community.  Note, I'm just a sleep-deprived undergrad, so DON'T take this as gospel. This is just my tiny design-oriented view of superconducting qubits. If you have any questions, corrections, or improvements,  feel free to reach out to me on via IBM's Slack (\url{https://qisk.it/join-slack}) or pull-request.
+\\
+\\
+USC Physics doesn't have an undergrad thesis, so I'll pretend it is by leaving one of those acknowledgement thingys.
+ Shout out to my parents (Todd \& Judy), Ally, and all my friends for always being there for always being down to talk story and help me academically. It means the world.
+\\
+\\
+With that, best of luck. Hope this helps (even if it's just a smidge) :D 
+\\-Clark
+
+\section*{Introduciton}
+
+As quantum computer engineers, we are tasked with trying to actually build a quantum computer! When the first researchers were attempting to build classical computers, everything was done by hand. Now, engineers use Electronic Design Automation (EDA) software. For the past 10+ years, quantum engineers have done everything by hand, so now we must employ EDA software to make our lives easier. Qiskit Metal was created to expedite superconducting qubit design and simulation. Today, I'll teach you how to best use it, and where its limitations lie.
+\section*{Prerequisites}
+
+This book is intended for incoming experimental superconducting qubit researchers. Specifically those in LFL.
+\begin{itemize}
+	\item Coding: Knows what inheritance in Python, Jupyter Notebook, Git.
+	\item Physics: Electromagnetism, Quantum Mechanics (w/ Perturbation Theory)
+\end{itemize}
+
+\newpage
+\tableofcontents
+\newpage
+
+\chapter{Design}
+
+\input{./chapters/1_Design/1_Design.tex}
+
+
+
+
+
+\chapter{Simulation}
+\subsection{Overview of Methods}
+\subsection{Lumped Oscillator Modeling}
+\subsection{Energy Participation Ratio}
+\subsection{Scattering / Admittance Simulation}
+
+\section{Export for Fabrication}
+\subsection{MIT Lincoln Labs}
+
+
+
+\end{document}
